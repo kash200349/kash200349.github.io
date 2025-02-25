@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION TO CSS</title>
+<l-- Internal css-->
+
+    <style>
+        h2 {
+            color:rgb(185, 99, 181);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul{
+            color: rgb(98, 16, 136);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        }
+
+        h2.tengah {
+            text-align: center;
+        }
+
+        .bg-darks {
+            background-color: rgb(112, 105, 182);
+        }
+
+        .text.White {
+
+           color:rgb(206, 194, 190);
+        }
+
+        #content {
+        background-color: rgb(191, 179, 201);
+        margin: 5px 10px 10px 5px;
+        padding: 5px;
+
+        }
+
+        .container .box p {
+            background-color: rgb(169, 115, 201);
+        }
+
+        .toUperCase {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .potong {
+            text-decoration: line-through;
+        }
+
+    </style>
+
+    </l-- Externel css-->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+    <div id="content">
+    <h1>Welcome to JTMK</h1>
+    <h2 class="bg-darks text-White tengah">Selamat Datang ke JTMK</h2>
+    <h2 class="tengah">HELLO</h2>
+
+    <P style="color:blue; font-size:20px;">Track Offered</P>
+
+    <p class="toUperCase">Please select your track</p>
+
+    <ul>
+
+<li class="potong">Software and Development Track</li>
+<li>Networking System Track</li>
+<li class="potong">Data Visualization Track</li>
+
+    </ul>
+    
+    <button type=""submit>Apply Here!</button>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p align="center">THANK YOU FOR VISIT OUR WEBSITE</p>
+        </div>
+    </div>
+    <footer>
+        Copyright 2025
+    </footer>
+
+</body>
+</html>
