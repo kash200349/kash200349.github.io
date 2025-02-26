@@ -50,6 +50,32 @@
             text-decoration: line-through;
         }
 
+        input[type="text"],[type="email"]{
+            width: 100px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px snow;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"]{
+            background-color: azure;
+            color: rgb(29, 28, 26);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover{
+            background-color:beige;
+        }
+
+        p::first-letter{
+            font-size: 2em;
+            color:blue;
+        }
+
     </style>
 
     </l-- Externel css-->
@@ -62,6 +88,8 @@
     <h1>Welcome to JTMK</h1>
     <h2 class="bg-darks text-White tengah">Selamat Datang ke JTMK</h2>
     <h2 class="tengah">HELLO</h2>
+    <input type="text"id="name"placeholder="Please Enter Your Name">
+    <input type="email"id="email"placeholder="Please Enter Your Email">
 
     <P style="color:blue; font-size:20px;">Track Offered</P>
 
