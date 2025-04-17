@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Check Umur</title>
+</head>
+<body>
+    <script>
+function checkUmur() {
+    let umur = prompt("Enter your age");
+
+    if(umur < 13){
+        console.log('kanak-kanak');
+        alert("kanak-kanak");
+    } else if ((umur >= 13)&& (umur < 19)) {
+        console.log('remaja');
+        alert('remaja');
+    } else if ((umur >= 19)&&(umur < 56)) {
+        console.log('dewasa');
+        alert('dewasa');
+    } else {
+        console.log('warga emas');
+        alert('warga emas')
+    }
+}
+
+function checkIC() {
+let umur = prompt("Umur");
+let adaKadPengenalan = true;
+
+if (umur >=18) {
+    if (adaKadPengenalan) {
+        console.log("Anda dibenarkan masuk.");
+    } else {
+        console.log("Anda perlu membawa kad pengenalan untuk masuk.");
+    }
+}else{
+    console.log("Anda tidak dibenarkan masuk.")
+}
+}
+
+function checkSIZE() {
+    let saiz = prompt("Enter Your Size");
+    switch (saiz) {
+        case 'S':
+        case 'M':
+            console.log('size kecil')
+            break;
+        case 'L':
+        case 'XL':
+            console.log('size biasa');
+            break;
+        default:
+            console.log('size besar');
+            break;
+        }
+}
+
+function OddEven() {
+    let num1 = prompt("Sila masukkan satu nombor");
+    let num2 = num1%2;
+
+    if(num2==1){
+        alert("This is an even number");
+    }else if(num2==0){
+        alert("This is an odd number");
+    }else{
+        alert("Please insert a number");
+    }
+}
+    </script>
+    
+</body>
+</html>
