@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content" style="width: 500px; height : 500px; border 1px;
+    border-style: dotted;">
+    <h1>
+      <span id="Hello">HELLO IM KASH</span>
+      <span>Kash</span>
+    </h1>
+    </div>
+
+    <button id="changeBlue" onmouseover="changeBlue()">changeBlue</button>
+    <button id="changeYellow" onclick="changeYellow()">changeYellow</button>
+    <input type="text" id="fullname" placeholder="Enter your full name"> <br>
+    <button onclick="btnsubmit()">Submit</button>
+
+    <div id="info"></div>
+
+    <script>
+    function changeBlue() {
+    let content = document.getElementById("content");
+
+        content.style.background="darkblue";
+        content.style.filter="blur(0px)";
+        content.style.color="white";
+    }
+
+     function changeYellow() {
+        content.style.background="yellow";
+        content.style.filter="blur(5px)";
+        content.style.color="black";
+
+     }
+
+     function btnsubmit() {
+        let info = document.getElementById("info")
+        let fullname = document.getElementById("fullname").value;
+        info.innerHTML = "Hello " + fullname;
+     }
+
+     let hello = document.getElementById("Hello");
+
+     hello.onmouseover = function () {
+        hello.innerText = "haii nama saya";
+        hello.style.color="red";
+     }
+
+     hello.onmouseout = function ( ) {
+        hello.innerHTML="Hello, my name is";
+        hello.style.color = "purple";
+     }
+
+    </script>
+</body>
+</html>
